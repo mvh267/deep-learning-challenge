@@ -1,0 +1,26 @@
+Overview of the Analysis
+The purpose of this analysis is to create a neural network model that can predict whether applicants 
+will be successful if funded by Alphabet Soup, a philanthropic foundation. The model is trained on historical 
+data from previous applicants, which includes various features about each applicant and a binary label 
+indicating whether they were ultimately successful.
+
+Results
+Data Preprocessing
+Target Variable: The target for the model is IS_SUCCESSFUL which indicates whether the money funded to the applicant 
+was used effectively.
+Feature Variables: Features include various properties of the applicants such as organization type, use of the application, 
+funding amount, and others that were deemed relevant after initial analysis.
+Variables Removed: Variables that were removed include non-informative identifiers such as EIN and NAME, as they do not 
+contribute to the model's predictive performance.
+
+Compiling, Training, and Evaluating the Model
+Model Architecture: The model includes several layers with relu activations for intermediate layers and a sigmoid activation for the output layer. Specific details from the notebooks indicate:
+First hidden layer: 80 neurons, relu activation
+Second hidden layer: 30 neurons, relu activation
+Output layer: 1 neuron, sigmoid activation
+Model Performance: The model achieved an accuracy of approximately 76% on the validation dataset.
+Performance Improvement Attempts: Several techniques were tested to improve model performance, including:
+Adjusting the number of neurons in each layer.
+Increasing the number of epochs.
+Modifying layer activation functions.
+Experimenting with different optimization algorithms.
